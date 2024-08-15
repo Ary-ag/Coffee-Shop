@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .product-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    
+    .product-card {
+        width: 250px;
+        margin: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .product-card img {
+        width: 100%;
+        border-radius: 8px;
+    }
+    
+    .product-card h2 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .product-card p {
+        font-size: 14px;
+        color: #666;
+    }
+    
+    .product-card button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .product-card button:hover {
+        background-color: #0056b3;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center; /* Center-align text */
+    }
+    
+
+
+
+.header-slider ul {
+    display: flex;
+    overflow-y: hidden;
+}
+
+.header-img {
+    max-width: 100%;
+    mask-image: linear-gradient(to bottom, #000000 50%, transparent 100%);
+}
+
+.header-slider a {
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    padding: 5vh 1vw;
+    background: #ffffff4f;
+    color: #0000007b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.control_next {
+    right: 0;
+}
+.explore {
+    width: 100%;
+    height: 80vh;
+    background-image: url(/coffee/img/coffee.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    align-items: center;
+  }
+  .explore-content {
+    width: 50%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Coffee Machine</h1>
+        </div>
+        <ul>
+            <li><a href="#"><a href="home.html">Home</a></a></li>
+            <li><a href="#"><a href="menu.html">Menu</a></a></li>
+            <li><a href="#"><a href="about.html">About</a></a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+<div class="container">
+    <h1>Choose Your Coffee</h1>
+    <div class="product-cards">
+        <div class="product-card">
+            <img src="/coffee/img/c2.jpg" alt="">
+            <h2>Cappuccino</h2>
+            <p>A cappuccino is the perfect balance of espresso, steamed milk and foam.</p>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/coffee/img/c3.jpg" alt="">
+            <h2>Latte</h2>
+            <p>A latte or caffè latte is a milk coffee that boasts a silky layer of foam as a real highlight to the drink.</p>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/coffee/img/c4.jpg" alt="">
+            <h2>Macchiato</h2>
+            <p>In Italian, the term “macchiato” translates as “marked” or “stained”, meaning a stained or marked coffee.</p>
+            <p>$39.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/coffee/img/c6.jpg" alt="">
+            <h2>Espresso</h2>
+            <p>As a beverage, espresso is a concentrated form of coffee brewed with high pressure, hot water and finely ground coffee beans.</p>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/coffee/img/c5.jpg" alt="">
+            <h2>Black Coffee</h2>
+            <p>Black coffee is simply coffee that is normally brewed without the addition of additives such as sugar, milk, cream, or added flavors.</p>
+            <p>$59.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/coffee/img/c7.jpg" alt="">
+            <h2>Doppio</h2>
+            <p>Doppio. A doppio is a type of coffee made with a double shot of espresso.</p>
+            <p>$69.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div><br>
+<div class="explore">
+    <div class="explore-content">
+        
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Coffee Machine Inc.</p>
+</footer>
+
+</body>
+</html>
